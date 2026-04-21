@@ -16,7 +16,7 @@ namespace Poo_2026
     }
     public class CamposYPropiedades //la propied piodria ser publica pero ya no seria encapsulamiento
     {
-        private string ?nombre;
-        public String Nombre { get; set; }
+        //private string ?nombre;
+        public string Nombre { get; set; } = "";
     }
 }
