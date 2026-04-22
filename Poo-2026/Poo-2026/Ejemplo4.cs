@@ -11,8 +11,6 @@ namespace Poo_2026
         PracticaMetodo pm = new PracticaMetodo(" Es mayor o menor de edad");
         PracticaMetodo pmConEdad = new PracticaMetodo("Damaris",16);
 
-
-
         public Ejemplo4()
         {
             Console.WriteLine("Entro al construtor"); 
