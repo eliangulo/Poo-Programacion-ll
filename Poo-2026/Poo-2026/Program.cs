@@ -6,9 +6,8 @@
 buscadorBD.ObtenerPersona(1);
 var buscadorLista = ej5.EjecutarBuscaePersona(TipoBusqueda.Lista);
 buscadorLista.ObtenerPersona(1);*/
-Ejemplo6 ej6 = new Ejemplo6();
 //ej6.PruebaStatic();
-
 //Ejemplo6.PruebaStatic();
 //ej6.MetodoConError();
-ej6.CalcularEdad();
+//ej6.CalcularEdad();
+Ejemplo7 ej = new Ejemplo7();
