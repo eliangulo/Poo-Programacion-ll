@@ -10,4 +10,4 @@ buscadorLista.ObtenerPersona(1);*/
 //Ejemplo6.PruebaStatic();
 //ej6.MetodoConError();
 //ej6.CalcularEdad();
-Ejemplo7 ej = new Ejemplo7();
+Ejemplo8 ej = new Ejemplo8();

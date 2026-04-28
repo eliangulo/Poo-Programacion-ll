@@ -24,6 +24,7 @@ public class Ejemplo7
         Console.WriteLine(prod.MostrarId());
         Console.WriteLine(prod.MostrarProducto());
         prod.InclementarId();
+        //prod.MetodoProtegido(); el unico que puede usarlo es la clase que hereda de la clase base, en este caso la clase producto
     }
 }
 abstract public class EntidadBase
@@ -38,7 +39,7 @@ abstract public class EntidadBase
         Id++;
         return Id;
     }
-    protected virtual int MetodoProtegido()
+    protected virtual void MetodoProtegido()
     {
         Console.WriteLine("Este es un método protegido");
     }
@@ -66,6 +67,10 @@ public class Cliente : EntidadBase
 public class Producto : EntidadBase
 {
     public string? NombreProducto { get; set; }
+    public Producto()
+    {
+        MetodoProtegido();
+    }
     public string MostrarProducto()
     {
         return $"El nombre del producto es: {NombreProducto} con id: {Id}";

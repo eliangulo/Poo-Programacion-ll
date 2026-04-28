@@ -43,7 +43,10 @@ public class Ejemplo6
 }
 public static class Util
 {
-   
+   public static void Imprimir(string texto) //mtdo para el ej8
+    {
+        Console.WriteLine(texto);
+    }
 
     public static string MensajeError(string mensaje="",
                                       Exception? e = null,
