@@ -67,7 +67,7 @@ public class Ejemplo8
 
         //clase generica
         //struct, class. new(), notnull, unmanaged, enum, delegate
-        public class UtilidadesArreglos<T> where T : Vehiculo, new()
+        public class UtilidadesArreglos<T> where T : IVehiculo, new()
         {
             public T PrimerElemento(T[] arreglo)
             {
@@ -95,7 +95,7 @@ public class Ejemplo8
         }
     }
     //se puede instanciar porque auto hereda de vehiculo
-    public class Vehiculo
+    public class Vehiculo :IVehiculo
     {
 
     }

@@ -36,7 +36,7 @@ public class Ejemplo6
          Console.WriteLine(Util.CalcularEdad(new DateTime(1995, 2, 21)));
          Console.WriteLine("------------------");
          var fecha = new DateTime(2000, 5, 2);
-         Console.WriteLine($"Edad con extnsion:{fecha.CalcularEdad()}");
+         Console.WriteLine($"Edad con extension:{fecha.CalcularEdad()}");
          Console.WriteLine("------------------");
 
     }
