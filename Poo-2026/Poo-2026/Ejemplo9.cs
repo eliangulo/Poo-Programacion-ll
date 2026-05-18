@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Poo_2026
 {
-    public class Ejemplo9
+    public class Ejemplo9Listas
     {
         //inicialice la lista con valores
         public List<int> listaNumeros { get; set; } = new List<int>()
@@ -15,7 +15,7 @@ namespace Poo_2026
         {
             "Ciro", "Carlos", "Mariana", "Gustavo"
         };
-        public Ejemplo9()
+        public Ejemplo9Listas()
         {
             #region ListaNumeros
             //Console.WriteLine($"Elemento en la posicin 2 : {listaNumeros[2]}");
