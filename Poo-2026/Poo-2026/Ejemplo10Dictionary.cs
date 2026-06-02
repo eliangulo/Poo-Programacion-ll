@@ -38,7 +38,12 @@ namespace Poo_2026
         {
             public string Cod { get; set; }
             public string NombreProv { get; set; }
+            public string claveTel { get; set; }
             public int CantidadHabitantes { get; set; }
+            public override string ToString()
+            {
+                return $"Cod: {Cod}, Nombre: {NombreProv}, Habitantes: {CantidadHabitantes}, Clave Tel: {claveTel}";
+            }
         }
 
     }

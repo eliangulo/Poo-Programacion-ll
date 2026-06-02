@@ -11,10 +11,10 @@ namespace Poo_2026
         int[] numeros = Enumerable.Range(1, 4).ToArray(); //otra forma de crear un array de enteros del 1 al 4
         Provincia[] provincias = new Provincia[]
         {
-            new Provincia() { Cod = "01", NombreProv = "Buenos Aires", CantidadHabitantes = 15600000 },
-            new Provincia() { Cod = "02", NombreProv = "Cordoba", CantidadHabitantes = 3560000 },
-            new Provincia() { Cod = "03", NombreProv = "Santa Fe", CantidadHabitantes = 3500000 },
-            new Provincia() { Cod = "04", NombreProv = "Mendoza", CantidadHabitantes = 2000000 }
+            new Provincia() { Cod = "01", NombreProv = "Buenos Aires", CantidadHabitantes = 15600000, claveTel = "011" },
+            new Provincia() { Cod = "02", NombreProv = "Cordoba", CantidadHabitantes = 3560000, claveTel = "011" },
+            new Provincia() { Cod = "03", NombreProv = "Santa Fe", CantidadHabitantes = 3500000, claveTel = "011" },
+            new Provincia() { Cod = "04", NombreProv = "Mendoza", CantidadHabitantes = 2000000, claveTel = "011" }
         };
 
         public Ejemplo11_Linq()

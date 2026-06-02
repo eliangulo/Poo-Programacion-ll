@@ -6,75 +6,65 @@ namespace Poo_2026
 {
     public class Ejemplo9Listas
     {
-        //inicialice la lista con valores
-        public List<int> listaNumeros { get; set; } = new List<int>()
-        {
-            10, 20, 30, 40, 50, 60
-        };
-        public List<string> listaNombre { get; set; } = new List<string>()
-        {
-            "Ciro", "Carlos", "Mariana", "Gustavo"
-        };
+        public List<int> listaNumeros = new List<int>() { 10, 20, 30, 40};
+        public List<string> listaNombres = new List<string>() { "Juan", "Maria", "Pedro", "Ana" };
+
         public Ejemplo9Listas()
         {
-            #region ListaNumeros
-            //Console.WriteLine($"Elemento en la posicin 2 : {listaNumeros[2]}");
-            //Console.WriteLine("--------LISTAR----------");
-            //foreach(var item in listaNumeros)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine("--------AGREGAR-----------");
-            //listaNumeros.Add(70);
-            //listaNumeros.Add(80);
-            //foreach (var item in listaNumeros)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine("--------ELIMINAR----------");
-            //listaNumeros.Remove(40);
-            //listaNumeros.Remove(60);
-            //listaNumeros.RemoveAt(0);//posicion
-            //listaNumeros.RemoveAt(3);
-            //foreach (var item in listaNumeros)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine("---------Clear-------------");
-            //listaNumeros.Clear();
-            //foreach (var item in listaNumeros)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine("--------------------------");
-            #endregion
-            #region ListaNombres
-            Console.WriteLine($"Cantidad de elementos : {listaNombre.Count}");
-            Console.WriteLine("-----Sin Ordenar------");
-            foreach (var item in listaNombre)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("----Ordenado Alfabeticamente----");
-            listaNombre.Sort();
-            foreach (var item in listaNombre)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("-------Ordenado-------");
-            listaNombre.Sort(2, 2, default);
-            foreach (var item in listaNombre)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("-------Desordeno-------");
-            listaNombre.Reverse();
-            foreach (var item in listaNombre)
-            {
-                Console.WriteLine(item);
-            }
-            #endregion
-        }
+            Console.WriteLine("----------------------------");
+            Console.WriteLine($"El elemento de la posicion 2 es: {listaNumeros[2]}");
 
+            Console.WriteLine("--------Listado de Elementos--------");
+            foreach (var item in listaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----Add--------");
+            listaNumeros.Add(50);
+            listaNumeros.Add(60);
+            foreach (var item in listaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----Remove-------");
+            listaNumeros.RemoveAt(3);//remover con la posicion del elemento
+            listaNumeros.Remove(10);
+            listaNumeros.Remove(20);
+            foreach (var item in listaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----Clear-------");
+            listaNumeros.Clear();
+            foreach (var item in listaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("-----LISTA STRING-------");
+
+            Console.WriteLine("-----Sort(ordenar)-------");
+            listaNombres.Sort(); //ordenar alfabeticamente
+            foreach (var item in listaNombres)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----Reversa-------");
+            listaNombres.Reverse();
+            foreach (var item in listaNombres)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("--------------");
+            listaNombres.Sort(2,2, default);
+            foreach (var item in listaNombres)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----Contar--------");
+            Console.WriteLine($"Hay {listaNombres.Count()} elements en esta lista de nombres");
+            Console.WriteLine($"Hay {listaNumeros.Count()} elements en esta lista de numeros");
+
+        }
     }
 }    
