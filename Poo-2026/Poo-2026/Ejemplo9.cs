@@ -64,7 +64,6 @@ namespace Poo_2026
             Console.WriteLine("-----Contar--------");
             Console.WriteLine($"Hay {listaNombres.Count()} elements en esta lista de nombres");
             Console.WriteLine($"Hay {listaNumeros.Count()} elements en esta lista de numeros");
-
         }
     }
 }    
