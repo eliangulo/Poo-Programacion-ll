@@ -11,7 +11,7 @@ buscadorLista.ObtenerPersona(1);*/
 //ej6.MetodoConError();
 //ej6.CalcularEdad();
 //Ejemplo10Dictionary ej = new Ejemplo10Dictionary();
-//Ejemplo11_Linq ej11 = new Ejemplo11_Linq();
+Ejemplo11_Linq ej11 = new Ejemplo11_Linq();
 //Ejemplo9Listas ejemplo = new Ejemplo9Listas();
-Ejemplo10Dictionary ejemplo = new Ejemplo10Dictionary();
+//Ejemplo10Dictionary ejemplo = new Ejemplo10Dictionary();
 

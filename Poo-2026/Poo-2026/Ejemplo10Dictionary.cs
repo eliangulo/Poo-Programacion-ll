@@ -16,7 +16,7 @@ namespace Poo_2026
           {
                 p1.Cod = "01";
                 p1.NombreProv = "Buenos Aires";
-                p1.CantidadHabitantes = 15600000;
+                p1.CantidadHabitantes = 156000;
           }
           string clave1 = Guid.NewGuid().ToString();
           provincias.Add(clave1,p1);
@@ -24,7 +24,7 @@ namespace Poo_2026
           {
                 p2.Cod = "02";
                 p2.NombreProv = "Cordoba";
-                p2.CantidadHabitantes = 15600000;
+                p2.CantidadHabitantes = 15600;
           }
           string clave2 = Guid.NewGuid().ToString();
           provincias.Add(clave2,p2);
@@ -32,7 +32,7 @@ namespace Poo_2026
           {
                 p3.Cod = "03";
                 p3.NombreProv = "Corrientes";
-                p3.CantidadHabitantes = 15600000;
+                p3.CantidadHabitantes = 1560;
           }
           string clave3 = Guid.NewGuid().ToString();
           provincias.Add(clave3,p3);
@@ -40,7 +40,7 @@ namespace Poo_2026
           {
                 p4.Cod = "04";
                 p4.NombreProv = "Entre Ríos";
-                p4.CantidadHabitantes = 15600000;
+                p4.CantidadHabitantes = 9000;
           }
           string clave4 = Guid.NewGuid().ToString();
             provincias.Add(clave4,p4);
