@@ -18,6 +18,21 @@ namespace Poo_2026
             new Provincias(){ Cod = "03", NombreProv = "Corrientes", CantidadHabitantes = 1560 },
             new Provincias(){ Cod = "04", NombreProv = "Entre Ríos", CantidadHabitantes = 9000 }
         };
+        ProvinciaCiudad[] provCiudad = new ProvinciaCiudad[]
+        {
+            new ProvinciaCiudad(){ Cod = "01", NombreProv = "Buenos Aires", CantidadHabitantes = 156000, 
+                                   ciudades = ["Capital Federal", "La Plata"]
+            },
+            new ProvinciaCiudad(){ Cod = "02", NombreProv = "Cordoba", CantidadHabitantes = 10000,
+                                   ciudades = ["Cordoba Capital", "Villa Carlos Paz"]
+            },
+            new ProvinciaCiudad(){ Cod = "03", NombreProv = "Corrientes", CantidadHabitantes = 1560,
+                                   ciudades = ["Corrientes Capital", "Goya"] 
+            },
+            new ProvinciaCiudad(){ Cod = "04", NombreProv = "Entre Ríos", CantidadHabitantes = 9000,
+                                   ciudades = ["Parana", "Gualeguaychú"] 
+            }
+        };
 
         public Ejemplo11_Linq()
         {
@@ -62,8 +77,46 @@ namespace Poo_2026
                  .ToList()
                  .FirstOrDefault();
 
+            //continuacion vdo
 
+            var numerosOrdenados = numeros.OrderByDescending(n => n).ToList();
 
+            //select
+            var nombreProv = provincias.Select(p => p.NombreProv).ToList();
+            //de prov traigo un nuevo objeto que va a tener 2 propiedades 
+            var nombreCodProv = provincias.Select
+            (p => new
+            {
+                codigo = p.Cod,
+                nombre = p.NombreProv
+            }).ToList();
+            //select con calculos
+            var numerosAlCuadrado = numeros.Select(n => n * n).ToList();
+            //select con indice y ordenamiento 
+            var provIndice = provincias
+                .Select ((provincias, indice) => new
+                {   
+                        Indice = indice,
+                        Nombre = provincias.NombreProv
+                      //prov = provincias - me trae el objeto completo
+                });
+
+            var provOrden = 
+                ( provincias
+                .Select (( provincias, inidce)  => new
+                {
+                    Orden = inidce + 1,
+                    Nombre = provincias.NombreProv
+                })
+                ).OrderByDescending(o => o.Orden) .ToList();
+
+            var ciudades = provCiudad
+                .Select(p => p.ciudades).ToList();
         }
+    }
+    public class ProvinciaCiudad : Provincias
+    {
+        public string[] ciudades { get; set; } = [];
+
     }
 }
